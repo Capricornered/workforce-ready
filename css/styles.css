@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Segoe UI",Verdana,Helvetica,Sans-Serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #fcb040;
+    padding: 20px;
+    display: flex;
+}
+
+#hamburger {
+    display: none;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logotext {
+    font-size: 60px;
+    font-weight: 600;
+    font-style: italic;
+    color: #58585a;
+    text-shadow: -1px 0 #58585a,0 1px #58585a,1px 0 #58585a,0 -1px #58585a;
+    margin-left: 15px;
+}
+
+#navs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+#secondary {
+    padding: 0 20px;
+    font-size: .85em;
+}
+
+#secondary li a {  
+    padding: 5px 8px;
+    margin-left: 15px;
+    color: #58585a;
+    text-decoration: none;
+    transition: .3s;
+}
+
+#secondary li a:hover {
+    color: #ffffff;
+    background: #58585a;
+}
+
+#primary {
+    padding: 20px;
+    font-size: 2em;  
+    font-weight: bold;
+}
+
+#primary li a {
+    padding: 5px 10px;
+    color: #58585a;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+#primary li a:hover {
+    color: #ffffff;
+    background: #58585a;
+}
+
+section {
+    margin: 20px 200px;
+}
+
+section h1 {
+    margin-bottom: 20px;
+    font-size: 1.75em;
+    color: #57575a;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+section .button {
+    background: #57575a;
+    border: 1px solid #57575a;
+    display: block;
+    width: fit-content;
+    margin: 20px 0;
+    padding: 5px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s;
+}
+
+section .button:hover {
+    color: #57575a;
+    background: #fff;
+}
+
+footer {
+    margin-top: 20px;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 0;
+    color: #58585a;
+}
+
+footer span {
+    background-color: #fcb040;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: .85rem;
+}
+
+footer span a {
+    color: #58585a;
+}
+
+
+@media (max-width: 1110px) {
+
+    #logo {
+        width: 40%;
+    }
+
+    #logo img {
+        width: 250px;
+    }
+
+    #logotext {
+        font-size: 2.5rem;
+    }
+
+    section {
+        margin: 20px 100px;
+    }
+    
+}
+
+@media (max-width: 900px) {
+
+    #hamburger {
+        align-self: start;
+        right: 2rem;
+        position: absolute;
+        cursor: pointer;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 4rem;
+        z-index: 3;
+        display: block;
+        z-index: 1;
+        height: 30px;
+    }
+
+    #navs {
+        display: block;
+        margin-right: -70%;
+        margin-top: 50px;
+        transition: .3s;
+        z-index: 2;
+        position: absolute;
+        right: 33px;
+        width: 300px;
+    }
+
+    #navs ul li {
+        display: block;
+        text-align: right;
+    }
+
+    #secondary li a {
+        display: block;
+        background: #fff;
+        border: 1px solid #fcb040;
+    }
+
+    #primary li a {
+        display: block;
+        background: #fff;
+        border: 1px solid #fcb040;
+        font-size: 1.5rem;
+    }
+
+    .out {
+        margin-right: 0 !important;
+    }
+
+    #primary, #secondary {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    #logo {
+        width: 50%;
+    }
+
+    #logo img {
+        width: 200px;
+    }
+
+    #logotext {
+        font-size: 2rem;
+    }
+
+    section {
+        margin: 20px 50px;
+    }
+    
+}
+
+@media (max-width: 470px) {
+
+    #logo img {
+        width: 100px;
+    }
+    
+}
+
+@media (max-width: 365px) {
+
+    #logo img {
+        width: 90px;
+    }
+
+    #logotext {
+        font-size: 1.5rem;
+    }
+    
+}
